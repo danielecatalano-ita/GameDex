@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Games/games.dart';
+
 void main() {
   runApp(const GameDexApp());
 }
@@ -108,12 +110,18 @@ class _PlatformSelectionScreenState extends State<PlatformSelectionScreen> {
   Widget _buildPlatformCard(String imagePath, String title) {
     return InkWell(
       onTap: () {
-        debugPrint("Hai selezionato $title");
+        // Naviga alla schermata di dettaglio
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => GamesList(platformName: title),
+          ),
+        );
       },
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.black26,
               blurRadius: 5,
