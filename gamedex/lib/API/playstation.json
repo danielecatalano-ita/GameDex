@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Final Fantasy VII Remake",
+    "genre": ["Shooter"],
+    "developers": ["Square Enix"],
+    "publishers": ["Square Enix"],
+    "releaseDates": {
+      "Japan": "Mar 3, 2020",
+      "NorthAmerica": "Mar 3, 2020",
+      "Europe": "Mar 3, 2020",
+      "Australia": "Mar 3, 2020"
+    },
+    "usefull_links": [],
+    "price": 20.0,
+    "image": "https://gaming-cdn.com/images/products/4273/616x353/final-fantasy-vii-remake-remake-playstation-4-gioco-playstation-store-cover.jpg?v=1736438520",
+    "description": "Il mondo è controllato dalla Shinra, una corporazione che sfrutta la linfa vitale del pianeta come energia mako. Nella città di Midgar, il mercenario Cloud Strife, ex membro dell'unità d'élite SOLDIER al servizio della Shinra, presta il suo aiuto al gruppo di resistenza Avalanche, ignaro dell'avventura epica che lo attende. FINAL FANTASY VII REMAKE è una reinterpretazione del celebre titolo originale con personaggi indimenticabili, trama appassionante ed epiche battaglie. Questo primo episodio del progetto FINAL FANTASY VII REMAKE racconta la fuga del gruppo da Midgar e approfondisce maggiormente gli eventi avvenuti nella città rispetto all'originale FINAL FANTASY VII."
+  },
+  {
+    "id": 2,
+    "name": "Call of Duty: Black Ops III",
+    "genre": [],
+    "developers": ["Treyarch"],
+    "publishers": ["Activision"],
+    "releaseDates": {
+      "Japan": "Nov 6, 2015",
+      "NorthAmerica": "Nov 6, 2015",
+      "Europe": "Nov 6, 2015",
+      "Australia": "Nov 6, 2015"
+    },
+    "usefull_links": [],
+    "price": 20.0,
+    "image": "https://gaming-cdn.com/images/products/1302/616x353/call-of-duty-black-ops-iii-pc-mac-gioco-steam-cover.jpg?v=1648067194",
+    "description": "Black Ops III + Nuketown per PC è un gioco sparatutto in prima persona ambientato nel 2065 in un mondo trasformato dai cambiamenti climatici e da tecnologie incredibilmente avanzate. È il dodicesimo gioco di Call of Duty."
+  },
+  {
+    "id": 3,
+    "name": "Batman: Arkham Knight",
+    "genre": [],
+    "developers": ["Rocksteady Studios"],
+    "publishers": ["WB Games"],
+    "releaseDates": {
+      "Japan": "Jul 2, 2015",
+      "NorthAmerica": "Jun 23, 2015",
+      "Europe": "Jun 23, 2015",
+      "Australia": "Jun 23, 2015"
+    },
+    "usefull_links": [],
+    "price": 6.5,
+    "image": "https://gaming-cdn.com/images/products/16210/616x353/batman-arkham-knight-playstation-4-gioco-playstation-store-cover.jpg?v=1730298525",
+    "description": "Batman: Arkham Knight è la conclusione della premiata trilogia di Arkham realizzata da Rocksteady Studios. Sviluppato esclusivamente per le piattaforme New-Gen, Batman: Arkham Knight segna il debutto della Batmobile nell'esclusiva versione Rocksteady. L'aggiunta tanto attesa di questo veicolo leggendario, accanto all'acclamato gameplay della serie Arkham, offre ai giocatori l'esperienza definitiva e completa nei panni di Batman, per sfrecciare sulle strade e planare tra i grattacieli di tutta Gotham City. In questo finale esplosivo, Batman affronta l'ultima e peggiore minaccia contro la città che ha giurato di proteggere: lo Spaventapasseri è tornato e ha riunito i super-criminali di Gotham per distruggere Batman per sempre."
+  },
+  {
+    "id": 4,
+    "name": "Grand Theft Auto V",
+    "genre": ["Action-adventure", "open world"],
+    "developers": ["Rockstar North"],
+    "publishers": ["Rockstar Games"],
+    "releaseDates": {
+      "Japan": "Dec 11, 2014",
+      "NorthAmerica": "Nov 18, 2014",
+      "Europe": "Nov 18, 2014",
+      "Australia": "Nov 18, 2014"
+    },
+    "usefull_links": [],
+    "price": 20.0,
+    "image": "https://image.api.playstation.com/cdn/EP1004/CUSA00411_00/eXsWlP0EkcVkLPHgU4pjflmg07252yU8.png",
+    "description": "Un giovane truffatore, un rapinatore di banche in pensione e uno spaventoso psicopatico si ritrovano nel mirino degli elementi più discutibili del mondo del crimine, del governo statunitense e dell'industria dello spettacolo. Per sopravvivere dovranno mettere in atto una serie di audaci colpi in una città spietata dove non possono fidarsi di nessuno, men che meno gli uni degli altri."
+  },
+  {
+    "id": 5,
+    "name": "Dark Souls III",
+    "genre": [],
+    "developers": ["FromSoftware"],
+    "publishers": ["Bandai Namco Entertainment"],
+    "releaseDates": {
+      "Japan": "Mar 24, 2016",
+      "NorthAmerica": "Apr 12, 2016",
+      "Europe": "Apr 12, 2016",
+      "Australia": "Apr 12, 2016"
+    },
+    "usefull_links": [],
+    "price": 50.0,
+    "image": "https://image.api.playstation.com/cdn/EP0700/CUSA03365_00/OFMeAw2KhrdaEZAjW1f3tCIXbogkLpTC.png",
+    "description": "Dark Souls 3 per PC è un gioco di ruolo fantasy, il quarto della serie e segue immediatamente il suo predecessore, Dark Souls 2. Il gioco è ambientato in un universo immaginario, il Regno di Lothric, dove il lungo periodo di illuminazione (letteralmente) è minacciato dall'avvento dell'Età dell'Oscurità. Il giocatore deve garantire la sopravvivenza dell'Età del fuoco assicurando che la Prima fiamma continui a bruciare a lungo."
+  },
+  {
+    "id": 6,
+    "name": "Lords of the Fallen",
+    "genre": [],
+    "developers": ["Deck13 Interactive"],
+    "publishers": ["City Interactive"],
+    "releaseDates": {
+      "Japan": "Oct 31, 2014",
+      "NorthAmerica": "Oct 28, 2014",
+      "Europe": "Oct 28, 2014",
+      "Australia": "Oct 28, 2014"
+    },
+    "usefull_links": [],
+    "price": 30.0,
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0908/6553eb611f3870f7480198582cbec8f207d889a78e37f934.png",
+    "description": "In Lords of the Fallen, vesti i panni di uno dei mitici Crociati Oscuri, che dovrà viaggiare attraverso i regni dei vivi e dei morti per interrompere il regno di Adyr, un tiranno crudele che ha inaugurato una nuova era di devastazione per l'umanità."
+  },
+  {
+    "id": 7,
+    "name": "Elden Ring",
+    "genre": [],
+    "developers": ["FromSoftware"],
+    "publishers": ["Bandai Namco"],
+    "releaseDates": {
+      "Japan": "TBA",
+      "NorthAmerica": "TBA",
+      "Europe": "TBA",
+      "Australia": "TBA"
+    },
+    "usefull_links": [],
+    "price": 60.0,
+    "image": "https://image.api.playstation.com/vulcan/img/rnd/202111/0506/hcFeWRVGHYK72uOw6Mn6f4Ms.jpg",
+    "description": "Elden Ring è un action RPG open world sviluppato da FromSoftware e pubblicato da Bandai Namco. Ambientato nell’Interregno, un regno vasto e misterioso devastato dalla rottura dell’Anello ancestrale, il gioco mette il giocatore nei panni di un Senzaluce, un emarginato richiamato per compiere un destino grandioso..."
+  },
+  {
+    "id": 8,
+    "name": "The Amazing Spider-Man 2",
+    "genre": [],
+    "developers": ["Beenox"],
+    "publishers": ["Activision"],
+    "releaseDates": {
+      "Japan": "Sep 4, 2014",
+      "NorthAmerica": "May 2, 2014",
+      "Europe": "Apr 29, 2014",
+      "Australia": "Apr 29, 2014"
+    },
+    "usefull_links": [],
+    "price": 80.0,
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1301/50b0326140dbb4146db669dbb3953c0329b0e6370d0012d6.png",
+    "description": "Sviluppato da Insomniac Games in esclusiva per PlayStation 5, Marvel’s Spider-Man 2 mette insieme due eroi: Peter Parker e Miles Morales, che affrontano nuove minacce nella New York più viva e dettagliata mai creata..."
+  },
+  {
+    "id": 9,
+    "name": "Fall Guys: Ultimate Knockout",
+    "genre": ["Battle royale"],
+    "developers": ["Mediatonic"],
+    "publishers": ["Devolver Digital"],
+    "releaseDates": {
+      "Japan": "2020",
+      "NorthAmerica": "2020",
+      "Europe": "2020",
+      "Australia": "2020"
+    },
+    "usefull_links": [],
+    "price": 0.0,
+    "image": "https://blog.it.playstation.com/tachyon/sites/12/2082/05/9c3f6258541a358910fa2fdadf21e01dacf03808.jpg?resize=1088,612&crop_strategy=smart",
+    "description": "Fall Guys è un party game multigiocatore online sviluppato da Mediatonic e fino a 60 giocatori si sfidano in una serie di round caotici a eliminazione..."
+  },
+  {
+    "id": 10,
+    "name": "God of War",
+    "genre": [],
+    "developers": ["SIE Santa Monica Studio"],
+    "publishers": ["Sony Interactive Entertainment"],
+    "releaseDates": {
+      "Japan": "Apr 20, 2018",
+      "NorthAmerica": "Apr 20, 2018",
+      "Europe": "Apr 20, 2018",
+      "Australia": "Apr 20, 2018"
+    },
+    "usefull_links": [],
+    "price": 20.0,
+    "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/1021/X3WIAh63yKhRRiMohLoJMeQu.png",
+    "description": "Sviluppato da Santa Monica Studio, God of War segna un nuovo inizio per la saga. Ambientato tra i miti norreni, il gioco segue Kratos, il guerriero spartano ormai invecchiato e tormentato..."
+  }
+]

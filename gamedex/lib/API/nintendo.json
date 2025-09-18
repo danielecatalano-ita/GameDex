@@ -1,0 +1,172 @@
+[
+  {
+    "id": 456,
+    "name": "Deltarune",
+    "genre": ["Role-playing"],
+    "developers": ["Toby Fox"],
+    "publishers": ["Toby Fox"],
+    "releaseDates": {
+      "Japan": "February 28, 2019",
+      "NorthAmerica": "February 28, 2019",
+      "Europe": "February 28, 2019",
+      "Australia": "February 28, 2019"
+    },
+    "usefull_links": [],
+    "price": 24,
+    "image": "https://gaming-cdn.com/images/products/19058/orig/deltarune-switch-2-gioco-nintendo-eshop-europe-cover.jpg?v=1747150477",
+    "description": "È arrivata la prossima avventura della serie UNDERTALE! Combatti (o risparmia) al fianco di nuovi personaggi nella storia parallela di UNDERTALE, DELTARUNE...! Con una colonna sonora imponente e una storia scritta da Toby Fox! Incontra nuovi e accattivanti personaggi principali, oltre a volti familiari come Toriel, Sans e altri ancora. Eh? Papyrus? No, è impegnato. Scusa! Animazione pixel fluida ed espressiva di Temmie."
+  },
+  {
+    "id": 493,
+    "name": "Divinity: Original Sin II",
+    "genre": ["Role-playing"],
+    "developers": ["Larian Studios"],
+    "publishers": ["Bandai Namco Entertainment"],
+    "releaseDates": {
+      "Japan": "October 31, 2019",
+      "NorthAmerica": "September 4, 2019",
+      "Europe": "September 4, 2019",
+      "Australia": "September 4, 2019"
+    },
+    "usefull_links": [],
+    "price": 50,
+    "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_DivinityOriginalSin2DefinitiveEdition_image1600w.jpg",
+    "description": "Il Divino è morto. Il Vuoto si avvicina. E i poteri dormienti dentro di te si risveglieranno presto. La battaglia per la Divinità è iniziata. Scegli con saggezza e abbi fiducia con parsimonia; l'oscurità si annida in ogni cuore. Chi sarai? Un Elfo carnivoro, una Lucertola Imperiale o un Non Morto risorto dalla tomba? Scopri come il mondo reagisce in modo diverso a chi - o cosa - sei. È tempo di una nuova Divinità! Raduna il tuo gruppo e sviluppa relazioni con i tuoi compagni."
+  },
+  {
+    "id": 497,
+    "name": "Donkey Kong Country: Tropical Freeze",
+    "genre": ["Platformer"],
+    "developers": ["Retro Studios"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "May 3, 2018",
+      "NorthAmerica": "May 4, 2018",
+      "Europe": "May 4, 2018",
+      "Australia": "May 4, 2018"
+    },
+    "usefull_links": [],
+    "price": 60,
+    "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DonkeyKongCountryTropicalFreeze_image1600w.jpg",
+    "description": "Unisciti a Donkey Kong, Diddy Kong, Dixie Kong, Cranky Kong e Funky Kong e nuota, pendola, salta e fai surf in isole piene di pericoli, oggetti nascosti e scontri con boss indimenticabili! Usa le abilità di ogni personaggio per esplorare ogni angolo delle isole, scoprire oggetti speciali e uscite nascoste."
+  },
+  {
+    "id": 982,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": ["Action-adventure"],
+    "developers": ["Nintendo EPD"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "March 3, 2017",
+      "NorthAmerica": "March 3, 2017",
+      "Europe": "March 3, 2017",
+      "Australia": "March 3, 2017"
+    },
+    "usefull_links": [],
+    "price": 70,
+    "image": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000023/SQ_NSwitch_TheLegendOfZeldaBreathOfTheWild_E",
+    "description": "The Legend of Zelda: Breath of the Wild per Nintendo Switch è un gioco di avventura e azione di Nintendo, l'ultimo della serie Legends of Zelda. Il gioco è abbastanza libero, con poche istruzioni impartite ai giocatori. Il gioco prevede principalmente la raccolta di risorse, il completamento di missioni secondarie e la risoluzione di enigmi."
+  },
+  {
+    "id": 82,
+    "name": "Animal Crossing: New Horizons",
+    "genre": ["Simulation"],
+    "developers": ["Nintendo EPD"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "March 20, 2020",
+      "NorthAmerica": "March 20, 2020",
+      "Europe": "March 20, 2020",
+      "Australia": "March 20, 2020"
+    },
+    "usefull_links": [],
+    "price": 25,
+    "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_AnimalCrossingNewHorizons_image1600w.jpg",
+    "description": "Il giocatore assume il ruolo di un personaggio personalizzabile che si trasferisce su un'isola deserta dopo aver comprato un pacchetto vacanze dal tanuki, Tom Nook. Il gioco procede in maniera non lineare mentre il giocatore esplora l'isola, e la fa sviluppare in una comunità di animali antropomorfi."
+  },
+  {
+    "id": 942,
+    "name": "Kirby Star Allies",
+    "genre": ["Platformer"],
+    "developers": ["HAL Laboratory"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "March 16, 2018",
+      "NorthAmerica": "March 16, 2018",
+      "Europe": "March 16, 2018",
+      "Australia": "March 16, 2018"
+    },
+    "usefull_links": [],
+    "price": 55,
+    "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_KirbyStarAllies_image1600w.jpg",
+    "description": "Alleati con gli amici in Kirby Star Allies, una colorata avventura platform solo per Nintendo Switch! Fino a quattro giocatori possono avventurarsi insieme a Dream Land, combinando le loro abilità per eseguire mosse speciali spettacolari o persino creare nuovi poteri! Un tempo da lupi. Dal cielo piovono cuori oscuri e adesso c'è qualcosa che non va a Dream Land! Tuttavia, quando uno di questi cuori colpisce Kirby, ha un effetto inatteso! Il nostro eroe rosa ottiene l'abilità di spandere amore e inizia a reclutare improbabili alleati che lo aiutino nella sua missione di riportare la pace."
+  },
+  {
+    "id": 645,
+    "name": "Fire Emblem: Three Houses",
+    "genre": ["Tactical role-playing"],
+    "developers": ["Intelligent Systems"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "July 26, 2019",
+      "NorthAmerica": "July 26, 2019",
+      "Europe": "July 26, 2019",
+      "Australia": "July 26, 2019"
+    },
+    "usefull_links": [],
+    "price": 85,
+    "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_FireEmblemThreeHouses_image1600w.jpg",
+    "description": "Tre territori. Tre case. Un viaggio unico. Fire Emblem: Three Houses è ambientato nel Fódlan, dove la Chiesa di Seiros esercita una grande influenza sul paese e i suoi abitanti. Nei panni del protagonista, puoi non solo combattere sul campo di battaglia, ma anche spostarti liberamente e interagire con altri personaggi per costruire relazioni e raccogliere informazioni. Quale casa sceglierai? Le Aquile Nere, i Leoni Blu e i Cervi Dorati sono le tre case dell'Accademia Ufficiali, una scuola d'élite che addestra i cadetti nell'uso delle armi, delle magie e delle abilità speciali. Come professore, devi scegliere una di queste tre case e guidare i suoi allievi in battaglie in cui la posta in gioco è la vita. Ogni casa è composta da vari studenti, ognuno con una personalità e abilità uniche. Gli allievi possono anche interagire tra loro, sviluppando legami che li aiuteranno a combattere meglio insieme."
+  },
+  {
+    "id": 1101,
+    "name": "Pokémon Legends: Arceus",
+    "genre": ["Action role-playing"],
+    "developers": ["Game Freak"],
+    "publishers": ["Nintendo", "The Pokémon Company"],
+    "releaseDates": {
+      "Japan": "January 28, 2022",
+      "NorthAmerica": "January 28, 2022",
+      "Europe": "January 28, 2022",
+      "Australia": "January 28, 2022"
+    },
+    "usefull_links": [],
+    "price": 54,
+    "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_PokemonLegendsArceus_IT.jpg",
+    "description": "Cattura, osserva e studia Pokémon selvatici per creare e completare il primo Pokédex della regione di Sinnoh in Leggende Pokémon: Arceus per Nintendo Switch. Leggende Pokémon: Arceus rende omaggio al gameplay dei titoli Pokémon del passato, introducendo al contempo nuove azioni ed elementi da gioco di ruolo. Ti ritroverai nella regione di Sinnoh, l'ambientazione di Pokémon Diamante e Pokémon Perla. Ma questa storia si svolge in un passato lontano, prima che esistessero concetti come gli Allenatori di Pokémon o la Lega Pokémon. Tutto intorno a te troverai Pokémon selvatici immersi in ambienti inospitali che rendono Sinnoh molto diversa da quella di Pokémon Diamante e Pokémon Perla."
+  },
+  {
+    "id": 1102,
+    "name": "Super Mario Maker 2",
+    "genre": ["Platformer", "Game creation system"],
+    "developers": ["Nintendo EPD"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "June 28, 2019",
+      "NorthAmerica": "June 28, 2019",
+      "Europe": "June 28, 2019",
+      "Australia": "June 28, 2019"
+    },
+    "usefull_links": [],
+    "price": 45,
+    "image": "https://supermariomaker.nintendo.com/assets/icons/smm2-share-fb.jpg",
+    "description": "Sviluppato da Nintendo per Nintendo Switch, Super Mario Maker 2 permette ai giocatori di creare, condividere e giocare livelli personalizzati nel mondo di Super Mario. Grazie a un editor intuitivo e ricco di strumenti, è possibile combinare elementi classici e nuovi per dare vita a percorsi unici, con stili grafici ispirati a titoli come Super Mario Bros., Super Mario World e Super Mario 3D World."
+  },
+  {
+    "id": 1103,
+    "name": "Luigi's Mansion 3",
+    "genre": ["Action-adventure"],
+    "developers": ["Next Level Games"],
+    "publishers": ["Nintendo"],
+    "releaseDates": {
+      "Japan": "October 31, 2019",
+      "NorthAmerica": "October 31, 2019",
+      "Europe": "October 31, 2019",
+      "Australia": "October 31, 2019"
+    },
+    "usefull_links": [],
+    "price": 60,
+    "image": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_1920,q_auto:low/MNS/NOE/70010000001619/SQ_NSwitch_LuigisMansion3",
+    "description": "Luigi’s Mansion 3 porta il fratello di Mario in una nuova e spettrale avventura. Luigi, Mario, Peach e i Toad vengono invitati in un lussuoso hotel misterioso, che presto si rivela infestato da fantasmi. Armato della sua inseparabile Poltergust G-00, Luigi deve esplorare i piani dell’edificio, ognuno con temi unici e puzzle ambientali, per salvare i suoi amici intrappolati."
+  }
+]

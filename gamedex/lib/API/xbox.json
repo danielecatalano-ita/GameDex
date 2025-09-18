@@ -1,0 +1,173 @@
+[
+  {
+    "id": 744,
+    "name": "Five Nights at Freddy's 4",
+    "genre": [],
+    "developers": ["Scottgames"],
+    "publishers": ["Clickteam"],
+    "releaseDates": {
+      "Japan": "Nov 29, 2019",
+      "NorthAmerica": "Nov 29, 2019",
+      "Europe": "Nov 29, 2019",
+      "Australia": "Nov 29, 2019"
+    },
+    "usefull_links": [],
+    "price": 7.99,
+    "image": "https://static.wikia.nocookie.net/five-nights-at-freddys-wiki-italia/images/4/41/Fnaf4.png/revision/latest?cb=20240212105550&path-prefix=it",
+    "description": "Bentornati al nuovo e migliorato Freddy Fazbear's Pizza! In Five Nights at Freddy's 4, i vecchi e invecchiati animatronici sono affiancati da un nuovo cast di personaggi. Sono adatti ai bambini, aggiornati con le più recenti tecnologie di riconoscimento facciale, collegati ai database criminali locali e promettono di offrire uno spettacolo sicuro e divertente per grandi e piccini! Cosa potrebbe andare storto? Come nuova guardia di sicurezza che lavora di notte, il tuo compito è monitorare le telecamere e assicurarti che nulla vada storto dopo l'orario di lavoro. La guardia precedente si è lamentata dei personaggi che cercavano di entrare in ufficio (nel frattempo è stata spostata al turno di giorno). Quindi, per semplificarti il lavoro, ti è stata fornita una testa vuota di Freddy Fazbear, che dovrebbe ingannare gli animatronici e lasciarti in pace se dovessero accidentalmente entrare nel tuo ufficio. Come sempre, Fazbear Entertainment non è responsabile per decessi o smembramenti."
+  },
+  {
+    "id": 882,
+    "name": "Halo Infinite",
+    "genre": ["First-person shooter"],
+    "developers": ["343 Industries"],
+    "publishers": ["Xbox Game Studios"],
+    "releaseDates": {
+      "Japan": "TBA",
+      "NorthAmerica": "TBA",
+      "Europe": "TBA",
+      "Australia": "TBA"
+    },
+    "usefull_links": [],
+    "price": 69.99,
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png",
+    "description": "Halo Infinite per PC e Xbox ONE doveva originariamente essere pubblicato come Halo 6, essendo la sesta versione principale della serie. Il gioco sparatutto in prima persona di fantascienza militare ha un vasto seguito e presenta l'umanità che combatte per la sopravvivenza contro alieni e fanatici religiosi e anche fanatici religiosi alieni."
+  },
+  {
+    "id": 917,
+    "name": "Hollow Knight",
+    "genre": [],
+    "developers": ["Cherry Games"],
+    "publishers": ["Cherry Games"],
+    "releaseDates": {
+      "Japan": "Sep 25, 2018",
+      "NorthAmerica": "Sep 25, 2018",
+      "Europe": "Sep 25, 2018",
+      "Australia": "Sep 25, 2018"
+    },
+    "usefull_links": [],
+    "price": 14.99,
+    "image": "https://gaming-cdn.com/images/products/4847/orig/hollow-knight-silksong-switch-nintendo-eshop-cover.jpg?v=1755854913",
+    "description": "Sviluppato da Team Cherry, Hollow Knight è un metroidvania d’azione e avventura ambientato nel misterioso regno sotterraneo di Hallownest. Il giocatore veste i panni di un cavaliere silenzioso che esplora un mondo oscuro e decadente, popolato da creature bizzarre, insetti corrotti e antichi segreti."
+  },
+  {
+    "id": 766,
+    "name": "Forza Horizon 4",
+    "genre": ["Racing"],
+    "developers": ["Playground Games"],
+    "publishers": ["Xbox Game Studios"],
+    "releaseDates": {
+      "Japan": "Oct 2, 2018",
+      "NorthAmerica": "Oct 2, 2018",
+      "Europe": "Oct 2, 2018",
+      "Australia": "Oct 2, 2018"
+    },
+    "usefull_links": [],
+    "price": 54.90,
+    "image": "https://static.mondoxbox.com/shotsnw/135/135912.jpg",
+    "description": "Le stagioni dinamiche cambiano tutto nel festival automobilistico più grande del mondo. Gareggia in solitaria o fai squadra per esplorare la bellissima e storica Gran Bretagna in un mondo aperto e condiviso. Colleziona, modifica e guida oltre 450 auto. Gareggia, esegui acrobazie, crea ed esplora: scegli la tua strada per diventare una Superstar di Horizon."
+  },
+  {
+    "id": 447,
+    "name": "Cyberpunk 2077",
+    "genre": ["Action role-playing"],
+    "developers": ["CD Projekt Red"],
+    "publishers": ["CD Projekt Red"],
+    "releaseDates": {
+      "Japan": "Unreleased",
+      "NorthAmerica": "Apr 16, 2020",
+      "Europe": "Apr 16, 2020",
+      "Australia": "Apr 16, 2020"
+    },
+    "usefull_links": [],
+    "price": 20.99,
+    "image": "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S1_03_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7",
+    "description": "Cyberpunk 2077 è un'avventura a mondo aperto ambientata a Night City, una megalopoli ossessionata dal potere, dalla moda e dalle modifiche cibernetiche. Vestirai i panni di V, un mercenario fuorilegge alla ricerca di un impianto unico in grado di conferire l'immortalità. Potrai personalizzare il cyberware, le abilità e lo stile di gioco del tuo personaggio ed esplorare un'immensa città dove ogni scelta che farai plasmerà la storia e il mondo intorno a te."
+  },
+  {
+    "id": 800,
+    "name": "Gears 5",
+    "genre": ["Third-person shooter"],
+    "developers": ["The Coalition"],
+    "publishers": ["Xbox Game Studios"],
+    "releaseDates": {
+      "Japan": "Sep 10, 2019",
+      "NorthAmerica": "Sep 10, 2019",
+      "Europe": "Sep 10, 2019",
+      "Australia": "Sep 10, 2019"
+    },
+    "usefull_links": [],
+    "price": 34.99,
+    "image": "https://wallpapers.com/images/featured/immagini-di-gears-of-war-5-ghdvt35q06ib8tv6.jpg",
+    "description": "Gears 5 per PC e Xbox One è il sequel di Gears of War 4 ed è un gioco sparatutto in terza persona in cui il giocatore deve aiutare il personaggio, Kait Diaz, a scoprire le origini dei Locust Horde e il luoghi (o il destino) della sua famiglia. L'attenzione in questo gioco si sposta dall'ex protagonista JD a Kait, e la profondità della narrazione ha spinto la produzione ad eliminare la parola 'Guerra' nel titolo, proprio per dare un segno concreto di cambiamento."
+  },
+  {
+    "id": 1703,
+    "name": "Sea of Thieves",
+    "genre": ["Action-adventure"],
+    "developers": ["Rare"],
+    "publishers": ["Xbox Game Studios"],
+    "releaseDates": {
+      "Japan": "Unreleased",
+      "NorthAmerica": "Mar 20, 2018",
+      "Europe": "Mar 20, 2018",
+      "Australia": "Mar 20, 2018"
+    },
+    "usefull_links": [],
+    "price": 19.99,
+    "image": "https://static.mondoxbox.com/shotsnw/125/125007.jpg",
+    "description": "Sea of Thieves ti coinvolge in un'esperienza piratesca totale, dalla navigazione ai combattimenti fino all'esplorazione e ai saccheggi: vivi da pirata ed entra di diritto nella leggenda. Senza ruoli prestabiliti, avrai la massima libertà di affrontare il mondo e gli altri giocatori nel modo che preferisci. Viaggia in gruppo o in solitaria e incontra altre ciurme di pirati in questo mondo condiviso... Saranno amichevoli oppure ostili? E tu come reagirai?"
+  },
+  {
+    "id": 1225,
+    "name": "Minecraft",
+    "genre": ["Sandbox"],
+    "developers": ["Mojang"],
+    "publishers": ["Xbox Game Studios"],
+    "releaseDates": {
+      "Japan": "Sep 20, 2017",
+      "NorthAmerica": "Sep 20, 2017",
+      "Europe": "Sep 20, 2017",
+      "Australia": "Sep 20, 2017"
+    },
+    "usefull_links": [],
+    "price": 14.99,
+    "image": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000963/SQ_NSwitch_Minecraft",
+    "description": "Esplora mondi generati casualmente e realizza costruzioni di ogni tipo, dalla più semplice delle case al più maestoso dei castelli. Gioca in modalità Creativa con risorse illimitate o scava nelle profondità nel mondo in modalità Sopravvivenza, fabbricando armi e armature per respingere creature pericolose. Scala montagne scoscese, scopri caverne intricate e estrai grandi vene di minerali. Scopri biomi di caverne rigogliose e di pietra calcarea. Illumina il tuo mondo con le candele per mostrare l'esperto speleologo e il maestro alpinista che sei!"
+  },
+  {
+    "id": 1370,
+    "name": "No Man's Sky",
+    "genre": [],
+    "developers": ["Hello Games"],
+    "publishers": ["505 Games"],
+    "releaseDates": {
+      "Japan": "Jul 24, 2018",
+      "NorthAmerica": "Jul 24, 2018",
+      "Europe": "Jul 24, 2018",
+      "Australia": "Jul 24, 2018"
+    },
+    "usefull_links": [],
+    "price": 49.99,
+    "image": "https://www.nomanssky.com/media/legacy/uploads/2018/07/homepage-next-768x950.jpg",
+    "description": "No Man's Sky per PC è un gioco di sopravvivenza azione-avventura in cui il giocatore assume la forma di un umanoide alieno schiantato al suolo che riceve il minimo di cui ha bisogno per sopravvivere e svilupparsi. Dotato di un multi-tool, il giocatore può seguire i consigli di un'entità chiamata Atlas, che di volta in volta si presenta sullo schermo."
+  },
+  {
+    "id": 212,
+    "name": "Battlefield V",
+    "genre": [],
+    "developers": ["EA DICE"],
+    "publishers": ["Electronic Arts"],
+    "releaseDates": {
+      "Japan": "Oct 19, 2018",
+      "NorthAmerica": "Oct 19, 2018",
+      "Europe": "Oct 19, 2018",
+      "Australia": "Oct 19, 2018"
+    },
+    "usefull_links": [],
+    "price": 39.99,
+    "image": "https://gaming-cdn.com/images/products/612/orig/battlefield-5-pc-gioco-ea-app-cover.jpg?v=1729758248",
+    "description": "Questa è l'esperienza definitiva di Battlefield V. Partecipa al più grande conflitto della storia tra terra, aria e mare con tutti i contenuti di gioco sbloccati fin da subito. Scegli dall'arsenale completo di armi, veicoli e gadget e immergiti nelle brutali battaglie della Seconda Guerra Mondiale. Distinguiti sul campo di battaglia con l'assortimento completo di Élite e i migliori contenuti di personalizzazione delle prime due annate."
+  }
+]
+
