@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'View/Games/games.dart';
-import 'View/Screens/PlatformScreen.dart';
-import 'View/Screens/ProfileScreen.dart';
-import 'View/Screens/WishlistScreen.dart';
 import 'View/_PlatformSelectionScreenState.dart';
 
 void main() {
