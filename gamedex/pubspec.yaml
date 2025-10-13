@@ -53,6 +53,9 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/
+    - assets/json/nintendo.json
+    - assets/json/playstation.json
+    - assets/json/xbox.json
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
