@@ -19,8 +19,8 @@ class TabBarView extends StatelessWidget {
     ];
 
     return ChangeNotifierProvider(
-      create: (_) => PlatformSelectionViewModel(),
-      child: Consumer<PlatformSelectionViewModel>(
+      create: (_) => TabBarViewModel(),
+      child: Consumer<TabBarViewModel>(
         builder: (context, viewModel, _) {
           return Scaffold(
             body: SafeArea(child: pages[viewModel.selectedIndex]),
