@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../viewmodels/TabBarViewModel.dart';
+import 'package:gamedex/ViewModels/TabBarViewModel.dart';
 import 'TabBarScreensViews/HomeScreenView.dart';
 import 'TabBarScreensViews/ProfileScreenView.dart';
 import 'TabBarScreensViews/WishlistScreenView.dart';
+import 'package:provider/provider.dart';
 
 
 
-class TabBarView extends StatelessWidget {
-  const TabBarView({super.key});
+
+class AppTabBarView extends StatelessWidget {
+  const AppTabBarView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +20,8 @@ class TabBarView extends StatelessWidget {
     ];
 
     return ChangeNotifierProvider(
-      create: (_) => PlatformSelectionViewModel(),
-      child: Consumer<PlatformSelectionViewModel>(
+      create: (_) => TabBarViewModel(),
+      child: Consumer<TabBarViewModel>(
         builder: (context, viewModel, _) {
           return Scaffold(
             body: SafeArea(child: pages[viewModel.selectedIndex]),
