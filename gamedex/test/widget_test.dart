@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:gamedex/Splash_screen/splash.dart';
+import 'package:gamedex/Views/Splash_screen/SplashScreenView.dart';
 
 import 'package:gamedex/main.dart';
 

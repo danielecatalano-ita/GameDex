@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 /// --- PROFILE SCREEN (vuota per ora) ---
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class ProfileScreenView extends StatelessWidget {
+  const ProfileScreenView({super.key});
 
   @override
   Widget build(BuildContext context) {

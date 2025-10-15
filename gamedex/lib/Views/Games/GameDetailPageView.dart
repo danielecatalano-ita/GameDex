@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class GameDetailPage extends StatelessWidget {
+class GameDetailPageView extends StatelessWidget {
   final Map<String, dynamic> game;
 
-  const GameDetailPage({super.key, required this.game});
+  const GameDetailPageView({super.key, required this.game});
 
   @override
   Widget build(BuildContext context) {

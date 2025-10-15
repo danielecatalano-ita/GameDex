@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Splash_screen/splash.dart';
+import 'Views/Splash_screen/SplashScreenView.dart';
 
 void main() {
   runApp(const GameDexApp());
@@ -16,7 +16,7 @@ class GameDexApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const SplashScreenView(),
     );
   }
 }

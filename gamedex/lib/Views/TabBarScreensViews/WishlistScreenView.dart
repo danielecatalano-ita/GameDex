@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 /// --- WISHLIST SCREEN (vuota per ora) ---
-class WishlistScreen extends StatelessWidget {
-  const WishlistScreen({super.key});
+class WishlistScreenView extends StatelessWidget {
+  const WishlistScreenView({super.key});
 
   @override
   Widget build(BuildContext context) {
