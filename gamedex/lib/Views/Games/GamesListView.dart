@@ -57,8 +57,16 @@ class GamesList extends StatelessWidget {
                             MaterialPageRoute(
                               builder: (_) => GameDetailPageView(game: {
                                 'name': game.name,
-                                'image': game.image,
                                 'description': game.description,
+                                'genre': game.genre,
+                                'developers': game.developers,
+                                'publishers': game.publishers,
+                                'platform': game.platform,
+                                'releaseDates': game.releaseDates,
+                                'price': game.price,
+                                'usefull_links': game.usefull_links,
+                                'image': game.image,
+                                'id': game.id,
                               }),
                             ),
                           );
