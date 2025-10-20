@@ -1,58 +1,109 @@
 import 'package:flutter/material.dart';
+import 'package:gamedex/Views/TabBarScreensViews/ProfileScreenView.dart';
+import 'package:gamedex/Views/TabBarScreensViews/WishlistScreenView.dart';
 import '../Games/GamesListView.dart';
 
-
-/// --- HOME SCREEN (scelta piattaforma) ---
-class HomeScreenView extends StatelessWidget {
+class HomeScreenView extends StatefulWidget {
   const HomeScreenView({super.key});
+
+  @override
+  State<HomeScreenView> createState() => _HomeScreenViewState();
+}
+
+class _HomeScreenViewState extends State<HomeScreenView> {
+  int _currentIndex = 0;
+  final PageController _pageController = PageController();
+
+  final List<Widget> _pages = const [
+    HomeTab(),
+    WishlistScreenView(),
+    ProfileScreenView(),
+  ];
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            // Logo + Nome App
-            Column(
-              children: [
-                Image.asset(
-                  "assets/images/gamedex_logo.png",
-                  width: 80,
-                  height: 80,
-                ),
-                const SizedBox(height: 8),
+      body: PageView(
+        controller: _pageController,
+        onPageChanged: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+        children: _pages,
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+          _pageController.animateToPage(
+            index,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeInOut,
+          );
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Wishlist"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profilo"),
+        ],
+      ),
+    );
+  }
+}
+
+/// --- HOME TAB ---
+class HomeTab extends StatelessWidget {
+  const HomeTab({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Column(
+        children: [
+          const SizedBox(height: 20),
+          Column(
+            children: [
+              Image.asset(
+                "assets/images/gamedex_logo.png",
+                width: 80,
+                height: 80,
+              ),
+              const SizedBox(height: 8),
+            ],
+          ),
+          const SizedBox(height: 10),
+          const Text(
+            "Scegli la piattaforma:",
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 50),
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.symmetric(horizontal: 80),
+              children: const [
+                PlatformCard(
+                    imagePath: "assets/images/playstation.png",
+                    title: "PlayStation"),
+                SizedBox(height: 20),
+                PlatformCard(
+                    imagePath: "assets/images/xbox.png", title: "Xbox"),
+                SizedBox(height: 20),
+                PlatformCard(
+                    imagePath: "assets/images/nintendo.png",
+                    title: "Nintendo"),
               ],
             ),
-            const SizedBox(height: 10),
-            const Text(
-              "Scegli la piattaforma:",
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 50),
-            // Liste piattaforme
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.symmetric(horizontal: 80),
-                children: const [
-                  PlatformCard(
-                      imagePath: "assets/images/playstation.png",
-                      title: "PlayStation"),
-                  SizedBox(height: 20),
-                  PlatformCard(
-                      imagePath: "assets/images/xbox.png", title: "Xbox"),
-                  SizedBox(height: 20),
-                  PlatformCard(
-                      imagePath: "assets/images/nintendo.png",
-                      title: "Nintendo"),
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
