@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gamedex/Views/TabBarScreensViews/HomeScreenView.dart';
 import 'package:provider/provider.dart';
 import 'package:gamedex/ViewModels/AuthViewModel.dart';
-import 'package:gamedex/Views/TabBarView.dart';
+
 
 class AuthView extends StatelessWidget {
   const AuthView({super.key});
@@ -138,7 +139,7 @@ class AuthView extends StatelessWidget {
               final ok = await vm.login();
               if (ok) {
                 navigator.pushReplacement(
-                  MaterialPageRoute(builder: (_) => const AppTabBarView()),
+                  MaterialPageRoute(builder: (_) => const HomeScreenView()),
                 );
               } else {
                 // Errore mostrato nel widget tramite vm.loginError
