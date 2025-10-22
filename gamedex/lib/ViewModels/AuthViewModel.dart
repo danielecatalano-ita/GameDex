@@ -3,23 +3,24 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthViewModel extends ChangeNotifier {
-  // PageController per PageView
-  final PageController pageController = PageController(initialPage: 1);
+  // 🔹 PageController per PageView (parte dal login)
+  final PageController pageController = PageController(initialPage: 0);
 
-  // Login controllers
+  // 🔹 Login controllers
   final TextEditingController loginUsernameController = TextEditingController();
   final TextEditingController loginPasswordController = TextEditingController();
 
-  // Signup controllers
+  // 🔹 Signup controllers
   final TextEditingController signupNameController = TextEditingController();
   final TextEditingController signupSurnameController = TextEditingController();
   final TextEditingController signupEmailController = TextEditingController();
   final TextEditingController signupPasswordController = TextEditingController();
 
+  // 🔹 Messaggi di errore
   String? loginError;
   String? signupError;
 
-  // Lista utenti in memoria
+  // 🔹 Lista utenti in memoria
   List<Map<String, dynamic>> _users = [];
 
   AuthViewModel() {
@@ -66,7 +67,6 @@ class AuthViewModel extends ChangeNotifier {
       return false;
     }
 
-    // cerca utente
     final user = _users.firstWhere(
           (u) => u['email'] == email && u['password'] == password,
       orElse: () => {},
@@ -131,7 +131,7 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  // 🔹 Aggiorna errori
+  // 🔹 Gestione errori
   void setSignupError(String? e) {
     signupError = e;
     notifyListeners();
