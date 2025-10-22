@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gamedex/ViewModels/SplashScreenViewModel.dart';
-import 'package:gamedex/Views/TabBarScreensViews/HomeScreenView.dart';
+import 'package:gamedex/Views/Auth/AuthView.dart' as auth_view;
 
 class SplashScreenView extends StatefulWidget {
   const SplashScreenView({super.key});
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreenView> with TickerProviderStat
   void _navigateToHome() {
     if (mounted) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const HomeScreenView()),
+        MaterialPageRoute(builder: (_) => const auth_view.AuthView()),
       );
     }
   }
