@@ -1,43 +1,53 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../Models/GamesListModel.dart';
+import '../../ViewModels/WishlistViewModel.dart';
 
-class GameDetailPageView extends StatelessWidget {
+class GameDetailPageView extends StatefulWidget {
   final Map<String, dynamic> game;
 
   const GameDetailPageView({super.key, required this.game});
 
   @override
+  State<GameDetailPageView> createState() => _GameDetailPageViewState();
+}
+
+class _GameDetailPageViewState extends State<GameDetailPageView> {
+  @override
   Widget build(BuildContext context) {
-    // Funzione di supporto per visualizzare liste come stringa separata da virgole
+    final wishlistVM = Provider.of<WishlistViewModel>(context);
+    final game = Game.fromJson(widget.game);
+
+    bool isFavorite = wishlistVM.isInWishlist(game);
+
     String listToString(dynamic list) {
-      try {
-        if (list == null) return 'N/D';
-        if (list is List && list.isNotEmpty) {
-          return list.map((e) => e.toString()).join(', ');
-        }
-        if (list is String && list.isNotEmpty) return list;
-        return 'N/D';
-      } catch (e) {
-        return 'N/D';
+      if (list == null) return 'N/D';
+      if (list is List && list.isNotEmpty) {
+        return list.map((e) => e.toString()).join(', ');
       }
+      if (list is String && list.isNotEmpty) return list;
+      return 'N/D';
     }
 
-    // Formatta le date di release
     String releaseDatesToString(dynamic dates) {
       if (dates == null) return 'N/D';
-      if (dates is Map) {
-        if (dates.isEmpty) return 'N/D';
+      if (dates is Map && dates.isNotEmpty) {
         return dates.entries.map((e) => '${e.key}: ${e.value}').join('\n');
       }
       return 'N/D';
     }
 
-    // Costruisce i TextSpan cliccabili per i link
     List<TextSpan> _buildLinks(dynamic links, BuildContext context) {
-      if (links == null) return [
-        const TextSpan(text: 'N/D', style: TextStyle(color: Colors.blue, fontSize: 16))
-      ];
+      if (links == null) {
+        return [
+          const TextSpan(
+            text: 'N/D',
+            style: TextStyle(color: Colors.blue, fontSize: 16),
+          )
+        ];
+      }
 
       List<String> linkList = [];
       if (links is List && links.isNotEmpty) {
@@ -48,7 +58,7 @@ class GameDetailPageView extends StatelessWidget {
 
       return linkList.map((link) {
         return TextSpan(
-          text: link + '\n', // ogni link va a capo
+          text: link + '\n',
           style: const TextStyle(
             color: Colors.blue,
             fontSize: 16,
@@ -71,21 +81,40 @@ class GameDetailPageView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(game['name'] ?? 'Dettagli gioco'),
+        title: Text(game.name ?? 'Dettagli gioco'),
+        actions: [
+          IconButton(
+            icon: Icon(
+              isFavorite ? Icons.star : Icons.star_border,
+              color: isFavorite ? Colors.amber : Colors.grey,
+            ),
+            onPressed: () {
+              wishlistVM.toggleWishlist(game);
+              setState(() {}); // aggiorna la stella
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(isFavorite
+                      ? '${game.name} rimosso dalla Wishlist'
+                      : '${game.name} aggiunto alla Wishlist'),
+                  duration: const Duration(seconds: 2),
+                ),
+              );
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Immagine 16:9 con bordi arrotondati
             Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: AspectRatio(
                   aspectRatio: 16 / 9,
                   child: Image.network(
-                    game['image'] ?? '',
+                    game.image ?? '',
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) =>
                     const Icon(Icons.broken_image, size: 100),
@@ -94,126 +123,63 @@ class GameDetailPageView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            // Nome
             Text(
-              game['name'] ?? 'Nome non disponibile',
+              game.name,
               style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            // Descrizione
             Text(
-              game['description'] ?? 'Descrizione non disponibile',
+              game.description ?? 'Descrizione non disponibile',
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
-            // Genere
-            RichText(
-              text: TextSpan(
-                children: [
-                  const TextSpan(
-                    text: 'Genere: ',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-                  ),
-                  TextSpan(
-                    text: listToString(game['genre']),
-                    style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
+            _infoRow('Genere', listToString(game.genre)),
+            _infoRow('Sviluppatori', listToString(game.developers)),
+            _infoRow('Publisher', listToString(game.publishers)),
+            _infoRow('Piattaforma', game.platform ?? 'N/D'),
+            _infoRow('Date di rilascio', releaseDatesToString(game.releaseDates)),
+            _infoRow('Prezzo',
+                game.price != null ? '\$${game.price?.toStringAsFixed(2)}' : 'N/D'),
             const SizedBox(height: 8),
-            // Sviluppatori
-            RichText(
-              text: TextSpan(
-                children: [
-                  const TextSpan(
-                    text: 'Sviluppatori: ',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-                  ),
-                  TextSpan(
-                    text: listToString(game['developers']),
-                    style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            // Publisher
-            RichText(
-              text: TextSpan(
-                children: [
-                  const TextSpan(
-                    text: 'Publisher: ',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-                  ),
-                  TextSpan(
-                    text: listToString(game['publishers']),
-                    style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            // Piattaforma
-            RichText(
-              text: TextSpan(
-                children: [
-                  const TextSpan(
-                    text: 'Piattaforma: ',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-                  ),
-                  TextSpan(
-                    text: game['platform'] ?? 'N/D',
-                    style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            // Date di release
-            RichText(
-              text: TextSpan(
-                children: [
-                  const TextSpan(
-                    text: 'Date di rilascio:\n',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-                  ),
-                  TextSpan(
-                    text: releaseDatesToString(game['releaseDates']),
-                    style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            // Prezzo
-            RichText(
-              text: TextSpan(
-                children: [
-                  const TextSpan(
-                    text: 'Prezzo: ',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-                  ),
-                  TextSpan(
-                    text: game['price'] != null ? '\$${game['price'].toStringAsFixed(2)}' : 'N/D',
-                    style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            // Link utili
             RichText(
               text: TextSpan(
                 children: [
                   const TextSpan(
                     text: 'Link utili:\n',
                     style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 20),
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue,
+                        fontSize: 20),
                   ),
-                  ..._buildLinks(game['usefull_links'], context),
+                  ..._buildLinks(game.usefull_links, context),
                 ],
               ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _infoRow(String title, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 6),
+      child: RichText(
+        text: TextSpan(
+          children: [
+            TextSpan(
+              text: '$title: ',
+              style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20),
+            ),
+            TextSpan(
+              text: value,
+              style: const TextStyle(
+                  fontWeight: FontWeight.normal,
+                  color: Colors.black,
+                  fontSize: 16),
             ),
           ],
         ),
