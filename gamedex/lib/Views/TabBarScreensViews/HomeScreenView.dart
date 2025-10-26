@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gamedex/Views/TabBarScreensViews/ProfileScreenView.dart';
 import 'package:gamedex/Views/TabBarScreensViews/WishlistScreenView.dart';
 import '../Games/GamesListView.dart';
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 
 class HomeScreenView extends StatefulWidget {
   const HomeScreenView({super.key});
@@ -31,6 +32,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
     return Scaffold(
       body: PageView(
         controller: _pageController,
+        physics: const NeverScrollableScrollPhysics(), // Swipe disabilitato
         onPageChanged: (index) {
           setState(() {
             _currentIndex = index;
@@ -38,8 +40,17 @@ class _HomeScreenViewState extends State<HomeScreenView> {
         },
         children: _pages,
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
+      bottomNavigationBar: ConvexAppBar(
+        backgroundColor: const Color(0xFF6E24FF),
+        activeColor: Colors.white,
+        color: Colors.black54,
+        style: TabStyle.react,
+        items: const [
+          TabItem(icon: Icons.home, title: 'Home'),
+          TabItem(icon: Icons.favorite, title: 'Wishlist'),
+          TabItem(icon: Icons.person, title: 'Profilo'),
+        ],
+        initialActiveIndex: _currentIndex,
         onTap: (index) {
           setState(() {
             _currentIndex = index;
@@ -50,11 +61,6 @@ class _HomeScreenViewState extends State<HomeScreenView> {
             curve: Curves.easeInOut,
           );
         },
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Wishlist"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profilo"),
-        ],
       ),
     );
   }
