@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../Models/GamesListModel.dart';
+import '../../Models/platform_color_helper.dart';
 import '../../ViewModels/WishlistViewModel.dart';
 
 class GameDetailPageView extends StatefulWidget {
@@ -82,6 +83,7 @@ class _GameDetailPageViewState extends State<GameDetailPageView> {
     return Scaffold(
       appBar: AppBar(
         title: Text(game.name ?? 'Dettagli gioco'),
+        backgroundColor: PlatformColorHelper.getColor(game.platform),
         actions: [
           IconButton(
             icon: Icon(
@@ -90,12 +92,14 @@ class _GameDetailPageViewState extends State<GameDetailPageView> {
             ),
             onPressed: () {
               wishlistVM.toggleWishlist(game);
-              setState(() {}); // aggiorna la stella
+              setState(() {}); // Aggiorna la stella
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(isFavorite
-                      ? '${game.name} rimosso dalla Wishlist'
-                      : '${game.name} aggiunto alla Wishlist'),
+                  content: Text(
+                    isFavorite
+                        ? '${game.name} rimosso dalla Wishlist'
+                        : '${game.name} aggiunto alla Wishlist',
+                  ),
                   duration: const Duration(seconds: 2),
                 ),
               );

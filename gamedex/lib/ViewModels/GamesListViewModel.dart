@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import '../Models/GamesListModel.dart';
+import '../Models/platform_color_helper.dart';
 
 
 class GamesListViewModel extends ChangeNotifier {
@@ -14,16 +15,7 @@ class GamesListViewModel extends ChangeNotifier {
 
   // Colore in base alla piattaforma
   Color getPlatformColor(String platformName) {
-    switch (platformName.toLowerCase()) {
-      case "playstation":
-        return Colors.blue;
-      case "xbox":
-        return Colors.green;
-      case "nintendo":
-        return Colors.red;
-      default:
-        return Colors.grey;
-    }
+    return PlatformColorHelper.getColor(platformName);
   }
 
   void updateSearchQuery(String query) {
