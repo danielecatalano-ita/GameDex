@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../Models/GamesListModel.dart';
-import '../../Models/platform_color_helper.dart';
+import '../../Helpers/platform_color_helper.dart';
 import '../../ViewModels/WishlistViewModel.dart';
 
 class GameDetailPageView extends StatefulWidget {
@@ -86,9 +86,22 @@ class _GameDetailPageViewState extends State<GameDetailPageView> {
         backgroundColor: PlatformColorHelper.getColor(game.platform),
         actions: [
           IconButton(
-            icon: Icon(
-              isFavorite ? Icons.star : Icons.star_border,
-              color: isFavorite ? Colors.amber : Colors.grey,
+            icon: Stack(
+              alignment: Alignment.center,
+              children: [
+                // Contorno nero più spesso
+                Icon(
+                  isFavorite ? Icons.star : Icons.star_border,
+                  color: Colors.black,
+                  size: 36, // leggermente più grande per il contorno
+                ),
+                // Stella colorata sopra
+                Icon(
+                  isFavorite ? Icons.star : Icons.star_border,
+                  color: isFavorite ? Colors.amber : Colors.grey,
+                  size: 32, // leggermente più piccola per far vedere il bordo
+                ),
+              ],
             ),
             onPressed: () {
               wishlistVM.toggleWishlist(game);

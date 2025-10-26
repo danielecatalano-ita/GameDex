@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import '../Models/GamesListModel.dart';
-import '../Models/platform_color_helper.dart';
+import '../Helpers/platform_color_helper.dart';
 
 
 class GamesListViewModel extends ChangeNotifier {
