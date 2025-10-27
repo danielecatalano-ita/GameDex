@@ -13,6 +13,8 @@ class AuthView extends StatefulWidget {
 
 class _AuthViewState extends State<AuthView> {
   bool _isLoading = true;
+  bool _loginObscure = true;
+  bool _signupObscure = true;
 
   @override
   void initState() {
@@ -110,13 +112,13 @@ class _AuthViewState extends State<AuthView> {
         boxShadow: [
           BoxShadow(
             color: const Color.fromRGBO(188, 151, 251, 1.0),
-            offset: const Offset(0, 3), // ridotto per evitare taglio
+            offset: const Offset(0, 3),
             blurRadius: 1,
             spreadRadius: 1,
           ),
         ],
       ),
-      margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2), // 🔹 leggero margine per non tagliare l’ombra
+      margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
       padding: const EdgeInsets.symmetric(horizontal: 18),
       child: child,
     );
@@ -124,7 +126,7 @@ class _AuthViewState extends State<AuthView> {
 
   Widget _actionButton({required String label, required VoidCallback onPressed}) {
     return SizedBox(
-      width: double.infinity, // 🔹 ora si adatta alla larghezza del form
+      width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xFF6A24F4),
@@ -159,8 +161,19 @@ class _AuthViewState extends State<AuthView> {
         _decoratedField(
           child: TextField(
             controller: vm.loginPasswordController,
-            obscureText: false,
-            decoration: const InputDecoration(border: InputBorder.none, hintText: ''),
+            obscureText: _loginObscure,
+            decoration: InputDecoration(
+              border: InputBorder.none,
+              hintText: '',
+              suffixIcon: IconButton(
+                icon: Icon(_loginObscure ? Icons.visibility_off : Icons.visibility, color: Colors.grey),
+                onPressed: () {
+                  setState(() {
+                    _loginObscure = !_loginObscure;
+                  });
+                },
+              ),
+            ),
           ),
         ),
         const SizedBox(height: 18),
@@ -233,8 +246,19 @@ class _AuthViewState extends State<AuthView> {
         _decoratedField(
           child: TextField(
             controller: vm.signupPasswordController,
-            obscureText: false,
-            decoration: const InputDecoration(border: InputBorder.none, hintText: ''),
+            obscureText: _signupObscure,
+            decoration: InputDecoration(
+              border: InputBorder.none,
+              hintText: '',
+              suffixIcon: IconButton(
+                icon: Icon(_signupObscure ? Icons.visibility_off : Icons.visibility, color: Colors.grey),
+                onPressed: () {
+                  setState(() {
+                    _signupObscure = !_signupObscure;
+                  });
+                },
+              ),
+            ),
           ),
         ),
         const SizedBox(height: 12),

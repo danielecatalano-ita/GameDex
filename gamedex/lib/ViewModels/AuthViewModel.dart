@@ -3,14 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthViewModel extends ChangeNotifier {
-  // PageController per PageView
   final PageController pageController = PageController(initialPage: 0);
 
-  // Login controllers
   final TextEditingController loginUsernameController = TextEditingController();
   final TextEditingController loginPasswordController = TextEditingController();
 
-  // Signup controllers
   final TextEditingController signupNameController = TextEditingController();
   final TextEditingController signupSurnameController = TextEditingController();
   final TextEditingController signupEmailController = TextEditingController();
@@ -19,7 +16,6 @@ class AuthViewModel extends ChangeNotifier {
   String? loginError;
   String? signupError;
 
-  // Lista utenti in memoria
   List<Map<String, dynamic>> _users = [];
   Map<String, dynamic>? currentUser;
   bool isLoggedIn = false;
@@ -29,7 +25,6 @@ class AuthViewModel extends ChangeNotifier {
     checkLoginStatus();
   }
 
-  // 🔹 Controlla lo stato del login da SharedPreferences
   Future<void> checkLoginStatus() async {
     final prefs = await SharedPreferences.getInstance();
     final userString = prefs.getString('currentUser');
@@ -42,7 +37,6 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  // 🔹 Salva l'utente corrente
   Future<void> _saveCurrentUser(Map<String, dynamic> user) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('currentUser', jsonEncode(user));
@@ -51,7 +45,6 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  // 🔹 Logout
   Future<void> logout() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove('currentUser');
@@ -60,7 +53,6 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  // 🔹 Carica utenti da SharedPreferences
   Future<void> _loadUsers() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -75,7 +67,6 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  // 🔹 Salva utenti su SharedPreferences
   Future<bool> _saveUsers() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -88,7 +79,6 @@ class AuthViewModel extends ChangeNotifier {
     }
   }
 
-  // 🔹 LOGIN
   Future<bool> login() async {
     loginError = null;
     final email = loginUsernameController.text.trim();
@@ -100,7 +90,6 @@ class AuthViewModel extends ChangeNotifier {
       return false;
     }
 
-    // cerca utente
     final user = _users.firstWhere(
           (u) => u['email'] == email && u['password'] == password,
       orElse: () => {},
@@ -116,7 +105,6 @@ class AuthViewModel extends ChangeNotifier {
     return true;
   }
 
-  // 🔹 SIGNUP
   Future<bool> signup() async {
     signupError = null;
 
@@ -144,7 +132,6 @@ class AuthViewModel extends ChangeNotifier {
       'password': password,
     };
 
-    // aggiungi nuovo utente
     _users.add(newUser);
 
     final saved = await _saveUsers();
@@ -159,7 +146,6 @@ class AuthViewModel extends ChangeNotifier {
     return true;
   }
 
-  // 🔹 Cambio pagina PageView
   void setPage(int index) {
     pageController.animateToPage(
       index,
@@ -169,7 +155,6 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  // 🔹 Aggiorna errori
   void setSignupError(String? e) {
     signupError = e;
     notifyListeners();
