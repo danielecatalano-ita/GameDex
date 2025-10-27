@@ -11,7 +11,8 @@
       "Europe": "February 28, 2019",
       "Australia": "February 28, 2019"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/deltarune/", "https://www.everyeye.it/giochi/deltarune/"],
     "price": 24,
     "image": "https://gaming-cdn.com/images/products/19058/orig/deltarune-switch-2-gioco-nintendo-eshop-europe-cover.jpg?v=1747150477",
     "description": "È arrivata la prossima avventura della serie UNDERTALE! Combatti (o risparmia) al fianco di nuovi personaggi nella storia parallela di UNDERTALE, DELTARUNE...! Con una colonna sonora imponente e una storia scritta da Toby Fox! Incontra nuovi e accattivanti personaggi principali, oltre a volti familiari come Toriel, Sans e altri ancora. Eh? Papyrus? No, è impegnato. Scusa! Animazione pixel fluida ed espressiva di Temmie."
@@ -28,7 +29,8 @@
       "Europe": "September 4, 2019",
       "Australia": "September 4, 2019"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/divinity-original-sin-2/", "https://www.everyeye.it/giochi/divinity-original-sin-2-definitive-edition/"],
     "price": 50,
     "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_DivinityOriginalSin2DefinitiveEdition_image1600w.jpg",
     "description": "Il Divino è morto. Il Vuoto si avvicina. E i poteri dormienti dentro di te si risveglieranno presto. La battaglia per la Divinità è iniziata. Scegli con saggezza e abbi fiducia con parsimonia; l'oscurità si annida in ogni cuore. Chi sarai? Un Elfo carnivoro, una Lucertola Imperiale o un Non Morto risorto dalla tomba? Scopri come il mondo reagisce in modo diverso a chi - o cosa - sei. È tempo di una nuova Divinità! Raduna il tuo gruppo e sviluppa relazioni con i tuoi compagni."
@@ -45,7 +47,8 @@
       "Europe": "May 4, 2018",
       "Australia": "May 4, 2018"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/donkey-kong-country-tropical-freeze/", "https://www.everyeye.it/giochi/donkey-kong-country-tropical-freeze/"],
     "price": 60,
     "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DonkeyKongCountryTropicalFreeze_image1600w.jpg",
     "description": "Unisciti a Donkey Kong, Diddy Kong, Dixie Kong, Cranky Kong e Funky Kong e nuota, pendola, salta e fai surf in isole piene di pericoli, oggetti nascosti e scontri con boss indimenticabili! Usa le abilità di ogni personaggio per esplorare ogni angolo delle isole, scoprire oggetti speciali e uscite nascoste."
@@ -62,7 +65,8 @@
       "Europe": "March 3, 2017",
       "Australia": "March 3, 2017"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/the-legend-of-zelda-breath-of-the-wild/", "https://www.everyeye.it/giochi/the-legend-of-zelda-breath-of-the-wild/"],
     "price": 70,
     "image": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000023/SQ_NSwitch_TheLegendOfZeldaBreathOfTheWild_E",
     "description": "The Legend of Zelda: Breath of the Wild per Nintendo Switch è un gioco di avventura e azione di Nintendo, l'ultimo della serie Legends of Zelda. Il gioco è abbastanza libero, con poche istruzioni impartite ai giocatori. Il gioco prevede principalmente la raccolta di risorse, il completamento di missioni secondarie e la risoluzione di enigmi."
@@ -79,7 +83,8 @@
       "Europe": "March 20, 2020",
       "Australia": "March 20, 2020"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/animal-crossing-new-horizons/", "https://www.everyeye.it/giochi/animal-crossing-new-horizons/"],
     "price": 25,
     "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_AnimalCrossingNewHorizons_image1600w.jpg",
     "description": "Il giocatore assume il ruolo di un personaggio personalizzabile che si trasferisce su un'isola deserta dopo aver comprato un pacchetto vacanze dal tanuki, Tom Nook. Il gioco procede in maniera non lineare mentre il giocatore esplora l'isola, e la fa sviluppare in una comunità di animali antropomorfi."
@@ -96,7 +101,8 @@
       "Europe": "March 16, 2018",
       "Australia": "March 16, 2018"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/kirby-star-allies/", "https://www.everyeye.it/giochi/kirby-star-allies/"],
     "price": 55,
     "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_KirbyStarAllies_image1600w.jpg",
     "description": "Alleati con gli amici in Kirby Star Allies, una colorata avventura platform solo per Nintendo Switch! Fino a quattro giocatori possono avventurarsi insieme a Dream Land, combinando le loro abilità per eseguire mosse speciali spettacolari o persino creare nuovi poteri! Un tempo da lupi. Dal cielo piovono cuori oscuri e adesso c'è qualcosa che non va a Dream Land! Tuttavia, quando uno di questi cuori colpisce Kirby, ha un effetto inatteso! Il nostro eroe rosa ottiene l'abilità di spandere amore e inizia a reclutare improbabili alleati che lo aiutino nella sua missione di riportare la pace."
@@ -113,7 +119,8 @@
       "Europe": "July 26, 2019",
       "Australia": "July 26, 2019"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/fire-emblem-three-houses/", "https://www.everyeye.it/giochi/fire-emblem-three-houses/"],
     "price": 85,
     "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_FireEmblemThreeHouses_image1600w.jpg",
     "description": "Tre territori. Tre case. Un viaggio unico. Fire Emblem: Three Houses è ambientato nel Fódlan, dove la Chiesa di Seiros esercita una grande influenza sul paese e i suoi abitanti. Nei panni del protagonista, puoi non solo combattere sul campo di battaglia, ma anche spostarti liberamente e interagire con altri personaggi per costruire relazioni e raccogliere informazioni. Quale casa sceglierai? Le Aquile Nere, i Leoni Blu e i Cervi Dorati sono le tre case dell'Accademia Ufficiali, una scuola d'élite che addestra i cadetti nell'uso delle armi, delle magie e delle abilità speciali. Come professore, devi scegliere una di queste tre case e guidare i suoi allievi in battaglie in cui la posta in gioco è la vita. Ogni casa è composta da vari studenti, ognuno con una personalità e abilità uniche. Gli allievi possono anche interagire tra loro, sviluppando legami che li aiuteranno a combattere meglio insieme."
@@ -130,7 +137,8 @@
       "Europe": "January 28, 2022",
       "Australia": "January 28, 2022"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/pokemon-legends-arceus/", "https://www.everyeye.it/giochi/pokemon-legends-arceus/"],
     "price": 54,
     "image": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_PokemonLegendsArceus_IT.jpg",
     "description": "Cattura, osserva e studia Pokémon selvatici per creare e completare il primo Pokédex della regione di Sinnoh in Leggende Pokémon: Arceus per Nintendo Switch. Leggende Pokémon: Arceus rende omaggio al gameplay dei titoli Pokémon del passato, introducendo al contempo nuove azioni ed elementi da gioco di ruolo. Ti ritroverai nella regione di Sinnoh, l'ambientazione di Pokémon Diamante e Pokémon Perla. Ma questa storia si svolge in un passato lontano, prima che esistessero concetti come gli Allenatori di Pokémon o la Lega Pokémon. Tutto intorno a te troverai Pokémon selvatici immersi in ambienti inospitali che rendono Sinnoh molto diversa da quella di Pokémon Diamante e Pokémon Perla."
@@ -147,7 +155,8 @@
       "Europe": "June 28, 2019",
       "Australia": "June 28, 2019"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/super-mario-maker-2/", "https://www.everyeye.it/giochi/super-mario-maker-2/"],
     "price": 45,
     "image": "https://supermariomaker.nintendo.com/assets/icons/smm2-share-fb.jpg",
     "description": "Sviluppato da Nintendo per Nintendo Switch, Super Mario Maker 2 permette ai giocatori di creare, condividere e giocare livelli personalizzati nel mondo di Super Mario. Grazie a un editor intuitivo e ricco di strumenti, è possibile combinare elementi classici e nuovi per dare vita a percorsi unici, con stili grafici ispirati a titoli come Super Mario Bros., Super Mario World e Super Mario 3D World."
@@ -164,9 +173,12 @@
       "Europe": "October 31, 2019",
       "Australia": "October 31, 2019"
     },
-    "usefull_links": [],
+    "platform": "nintendo",
+    "usefull_links": ["https://www.metacritic.com/game/luigis-mansion-3/", "https://www.everyeye.it/giochi/luigis-mansion-3/"],
     "price": 60,
     "image": "https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_1920,q_auto:low/MNS/NOE/70010000001619/SQ_NSwitch_LuigisMansion3",
     "description": "Luigi’s Mansion 3 porta il fratello di Mario in una nuova e spettrale avventura. Luigi, Mario, Peach e i Toad vengono invitati in un lussuoso hotel misterioso, che presto si rivela infestato da fantasmi. Armato della sua inseparabile Poltergust G-00, Luigi deve esplorare i piani dell’edificio, ognuno con temi unici e puzzle ambientali, per salvare i suoi amici intrappolati."
   }
 ]
+
+
