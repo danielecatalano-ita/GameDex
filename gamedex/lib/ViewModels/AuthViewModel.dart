@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthViewModel extends ChangeNotifier {
   // PageController per PageView
-  final PageController pageController = PageController(initialPage: 1);
+  final PageController pageController = PageController(initialPage: 0);
 
   // Login controllers
   final TextEditingController loginUsernameController = TextEditingController();
@@ -21,9 +21,43 @@ class AuthViewModel extends ChangeNotifier {
 
   // Lista utenti in memoria
   List<Map<String, dynamic>> _users = [];
+  Map<String, dynamic>? currentUser;
+  bool isLoggedIn = false;
 
   AuthViewModel() {
     _loadUsers();
+    checkLoginStatus();
+  }
+
+  // 🔹 Controlla lo stato del login da SharedPreferences
+  Future<void> checkLoginStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    final userString = prefs.getString('currentUser');
+    if (userString != null && userString.isNotEmpty) {
+      currentUser = jsonDecode(userString);
+      isLoggedIn = true;
+    } else {
+      isLoggedIn = false;
+    }
+    notifyListeners();
+  }
+
+  // 🔹 Salva l'utente corrente
+  Future<void> _saveCurrentUser(Map<String, dynamic> user) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('currentUser', jsonEncode(user));
+    currentUser = user;
+    isLoggedIn = true;
+    notifyListeners();
+  }
+
+  // 🔹 Logout
+  Future<void> logout() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('currentUser');
+    currentUser = null;
+    isLoggedIn = false;
+    notifyListeners();
   }
 
   // 🔹 Carica utenti da SharedPreferences
@@ -46,10 +80,10 @@ class AuthViewModel extends ChangeNotifier {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('users', jsonEncode(_users));
-      debugPrint('✅ Utenti salvati correttamente!');
+      debugPrint('Utenti salvati correttamente!');
       return true;
     } catch (e) {
-      debugPrint('❌ Errore nel salvataggio utenti: $e');
+      debugPrint('Errore nel salvataggio utenti: $e');
       return false;
     }
   }
@@ -78,6 +112,7 @@ class AuthViewModel extends ChangeNotifier {
       return false;
     }
 
+    await _saveCurrentUser(user);
     return true;
   }
 
@@ -102,13 +137,15 @@ class AuthViewModel extends ChangeNotifier {
       return false;
     }
 
-    // aggiungi nuovo utente
-    _users.add({
+    final newUser = {
       'name': name,
       'surname': surname,
       'email': email,
       'password': password,
-    });
+    };
+
+    // aggiungi nuovo utente
+    _users.add(newUser);
 
     final saved = await _saveUsers();
     if (!saved) {
@@ -117,6 +154,7 @@ class AuthViewModel extends ChangeNotifier {
       return false;
     }
 
+    await _saveCurrentUser(newUser);
     notifyListeners();
     return true;
   }
