@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gamedex/ViewModels/AuthViewModel.dart';
 import 'package:gamedex/Views/Splash_screen/SplashScreenView.dart';
 import 'package:provider/provider.dart';
-import 'Views/Splash_screen/SplashScreenView.dart';
 import 'ViewModels/WishlistViewModel.dart';
 
 void main() {

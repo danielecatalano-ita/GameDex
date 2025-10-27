@@ -1,10 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../../Models/GamesListModel.dart';
 import '../../Helpers/platform_color_helper.dart';
 import '../../ViewModels/WishlistViewModel.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class GameDetailPageView extends StatefulWidget {
   final Map<String, dynamic> game;

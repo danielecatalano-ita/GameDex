@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gamedex/Views/TabBarScreensViews/HomeScreenView.dart';
 import 'package:provider/provider.dart';
 import 'package:gamedex/ViewModels/AuthViewModel.dart';
-import 'package:gamedex/Views/TabBarView.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthView extends StatefulWidget {
@@ -26,7 +26,7 @@ class _AuthViewState extends State<AuthView> {
 
     if (prefs.containsKey('currentUser')) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const AppTabBarView()),
+        MaterialPageRoute(builder: (_) => const HomeScreenView()),
       );
     } else {
       setState(() {
@@ -175,7 +175,7 @@ class _AuthViewState extends State<AuthView> {
             final ok = await vm.login();
             if (ok) {
               navigator.pushReplacement(
-                MaterialPageRoute(builder: (_) => const AppTabBarView()),
+                MaterialPageRoute(builder: (_) => const HomeScreenView()),
               );
             }
           },
